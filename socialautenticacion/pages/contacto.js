@@ -1,4 +1,4 @@
-import LoginLogout from "../src/components/InicioCerrarSesion";
+import LoginLogout from "../src/components/LoginLogout";
 import { withPageAuthRequired } from "@auth0/nextjs-auth0";
 
 export const getServerSideProps = withPageAuthRequired();
