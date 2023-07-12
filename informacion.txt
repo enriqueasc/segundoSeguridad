@@ -1,0 +1,45 @@
+configuracion inicial
+
+dependencias
+npm i eslint-config-prettier eslint-plugin-jsx-a11y eslint-plugin-prettier prettier -D
+
+-D es para decir es que una dependencia de desarrollo
+esto hace una diferencia con las dependencias directas de nuestro proyecto de las dependencias de desarrollo
+
+module.exports = {
+  semi: true,
+  singleQuote: true,
+  printWidth: 200,
+  tabWidth: 2,
+  trailingComma: 'es5',
+  bracketSpacing: true,
+};
+
+module.exports = {
+  env: {
+    browser: true,
+    amd: true,
+    node: true,
+    es6: true,
+  },
+  extends: [
+    "eslint:recommended",
+    "plugin:jsx-a11y/recommended",
+    "plugin:prettier/recommended",
+    "next",
+    "next/core-web-vitals",
+  ],
+  rules: {
+    semi: ["error", "always"],
+  },
+};
+
+
+"lint:fix": "eslint src/ --fix"
+
+
+
+TailwindCSS 
+
+npm install tailwindcss postcss autoprefixier
+

@@ -1,0 +1,37 @@
+
+para crear el proyecto de ract ejecutar dentro de la carpeta elegida el siguiente comando
+
+1.-
+    npx create-react-app . //el punto es para que se cree dentro de la carpeta actual
+
+    npx create-react-app my-app
+
+2.-
+    Install the Auth0 React SDK
+    Run the following command within your project directory to install the Auth0 React SDK:
+
+    npm install @auth0/auth0-react
+
+
+3.-
+    To run the sample follow these steps:
+
+    1.-Set the Allowed Callback URLs in the Application Settings to
+    http://localhost:3000
+
+    2.-Set Allowed Web Origins in the Application Settings to
+    http://localhost:3000
+
+    3.-Set Allowed Logout URLs in the Application Settings to
+    http://localhost:3000
+
+    4.-Make sure Node.JS LTS is installed and execute the following commands in the sample's directory:
+    npm install && npm start
+
+    You can also run it from a Docker image with the following commands:
+
+    # In Linux / macOS
+    sh exec.sh
+    # In Windows' Powershell
+    ./exec.ps1
+
